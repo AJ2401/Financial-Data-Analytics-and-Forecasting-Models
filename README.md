@@ -1092,14 +1092,3 @@ Third day of 5-day SMA: (13 + 14 + 15 + 16 + 17) / 5 = 15
 
 ---
 
-## -> Parallel Data
-
-## -> Cross -Section Data & Cross Section Data Analysis
-
-## -> Mean Median Mode Variance & deviation Definition and Usage of them nalysis
-
-## -> Explanation over using a specific type of analysis for any situation/stock (for an example)
-
-         1. we can use MA
-         2. we can also use Recursive MA
-         3. how many values to reject (like should take multiple of 2 or multiple of 3 ) in MA or in Recursive MA
