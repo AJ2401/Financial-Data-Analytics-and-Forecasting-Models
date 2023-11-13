@@ -194,8 +194,6 @@ The value of econometrics:
 
 ## Steps involved in forming an econometric model
 
-![plot](./fig1.png)
-
 ---
 
 ## Detailed Explanation of Each Step :
@@ -428,7 +426,7 @@ The value of econometrics:
 
 ### -> x vs y data point scatter graph
 
-![plot](./fig2.png)
+
 
 ### ANALYSIS OF THE PLOT
 
@@ -444,7 +442,6 @@ The value of econometrics:
 
 ### Adding the Best-Fit-Line to the Scattered Data Point Graph
 
-![plot](./fig3.png)
 
 ### Analysis of Best-Fit-Line Plotted Graph :
 
@@ -456,7 +453,7 @@ The value of econometrics:
 
 ### Using the OLS METHOD TO VALIDATE THE MODEL'S OUTPUT :
 
-![plot](./fig4.png)
+
 
 ### Analysis of OLS Plotted Graph :
 
@@ -566,19 +563,18 @@ The value of econometrics:
 
 ### Condition 1 : if 𝐻𝑜 : 𝓑 = 𝓑\* && 𝐻𝟣 : 𝓑 != 𝓑\*
 
-## ![plot](./fig5.png)
+
 
 ---
 
 ### Condition 2 : if 𝐻𝑜 : 𝓑 = 𝓑\* && 𝐻𝟣 : 𝓑 < 𝓑\*
 
-## ![plot](./fig7.png)
+
 
 ---
 
 ### Condition 3 : if 𝐻𝑜 : 𝓑 = 𝓑\* && 𝐻𝟣 : 𝓑 > 𝓑\*
 
-![plot](./fig8.png)
 
 ---
 
@@ -707,7 +703,7 @@ The value of econometrics:
 
 ```
 
-![plot](./fig9.png)
+
 
 ---
 
@@ -1015,144 +1011,6 @@ Third day of 5-day SMA: (13 + 14 + 15 + 16 + 17) / 5 = 15
 
 ```
 
-## ACF AND PACF PLOTS OF THE ARMA MODEL :
-
-```
-In figure 1, the MA(1) has an acf that is significant for only lag 1, while the pacf declines geometrically, and is significant until lag 7. The acf at lag 1 and all of the pacfs are negative as a result of the negative coefficient in the MA generating process.
-
-```
-
-### `In Fig 1`
-
-```
-
-   1. It is a MA(1) model.
-
-   2. It represents the relationship between an observation and  error from a moving average model by lagged observations.
-
-   3. The equation  " yt = − 0.5ut0 + ut " means that the current value is influenced by the error term of previous value .
-
-   4. The ACF is significant spike only for lag 1 for an MA(1) model and further it will decline.
-
-```
-
-## ![plot](./fig16.png)
-
----
-
-### `In Fig 2`
-
-```
-   1. It is a MA(1) model.
-
-   2. It represents the relationship between an observation and  error from a moving average model by lagged observations.
-
-   3. The equation  " yt = − 0.5ut0 + ut " means that the current value is influenced by the error term of previous value .
-
-   4. The ACF is significant spike only for lag 1 for an MA(1) model and further it will decline,but there is a spike in 2nd lag also which indicates that there is a strong co-relation between the values.
-
-```
-
-## ![plot](./fig15.png)
-
----
-
-### `In Fig 3`
-
-```
-1. It is an  AR(1) model, or Autoregressive model of order 1, which is an  another type of time series model.
-
-2. It describes the relationship between an current data point and its previous data point.
-
-3. The given equation for the AR(1) process is
-   yt = 0.9 yt0 + ut
-
-      - yt0 is prev dp
-      - ut is error term
-
-4. A coefficient of 0.9 in the AR(1) model means that the current observation is strongly influenced by the previous observation.So as the far over the lags the relationship influence decreases.
-
-5. For an AR(1) process, especially one with a coefficient close to 1 (like 0.9), the ACF will show a slow decline/decay.
-
-
-6.In an AR(1) process, the PACF is typically significant for the first lag (lag 1) and not significant for subsequent lags.
-
-```
-
-## ![plot](./fig14.png)
-
----
-
-### `In Fig 4`
-
-```
-1. It is an  AR(1) model, or Autoregressive model of order 1, which is an  another type of time series model.
-
-2. It describes the relationship between an current data point and its previous data point.
-
-3. The given equation for the AR(1) process is
-   yt = 0.5 yt0 + ut
-
-      - yt0 is prev dp
-      - ut is error term
-
-4. A coefficient of 0.5 in the AR(1) model means that the current observation is influenced by the previous observation.So as the far over the lags the relationship influence decreases.
-
-5. For an AR(1) process, especially one with a coefficient close to 1 (like 0.5), the ACF will show a significant decline/decay.
-
-
-6.In an AR(1) process, the PACF is typically significant for the first lag (lag 1) and not significant for subsequent lags.
-
-```
-
-## ![plot](./fig13.png)
-
----
-
-### `In Fig 5`
-
-```
-1. It is an AR(1) Model.
-
-2. The provided equation for the AR(1) process is
-
-            `yt = −0.5yt0 + ut.`
-
-3. The coefficient of the previous observation is -0.5, indicating that the series is negatively influenced by its past value.
-
-4. The coefficient (0.5 in absolute terms) is farther from 1. Hence, the series will have rapid decay/decline.
-
-5. But we can see a spike at 2nd position/lag which indicates that there is strong correlation between the lags.
-
-6. For an AR(1) model with a coefficient of -0.5, the ACF will show an alternating pattern because of the negative coefficient.
-
-```
-
-## ![plot](./fig12.png)
-
----
-
-### `In Fig 6`
-
-```
-1. It is an ARMA Model.
-
-2. The given equation for the ARMA(1, 1) process is
-
-               yt = 0.5yt0 + 0.5ut0 + ut
-
-            - yt is predictive value
-            - yt0 is previous actual value
-            - ut0 is the previous error term
-            - ut is the current error term
-
-3. The coefficient of the lagged error term is also 0.5, suggesting the model is influenced by past errors.
-
-4. Both PCAF AND ACF GRAPH WILL DECAY/DECLINE OVER THE LAGS.
-
-```
-
-## ![plot](./fig11.png)
 
 ---
 
